@@ -37,6 +37,7 @@ class BaseAgent:
         self.robot = self_robot
         self.opponents = opponents.copy()
         self.teammates = teammates.copy()
+        self.obstacles = opponents.copy()
 
         self.decision()
         self.post_decision()
